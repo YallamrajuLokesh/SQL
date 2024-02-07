@@ -63,3 +63,6 @@ select Dname,avg(salary)
 from department as d, Employee as e
 where d.Dnumber=e.Dno
 group by Dname
+
+/* find substring*/
+select * from Department where Dname like '%s%';
