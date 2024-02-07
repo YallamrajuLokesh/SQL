@@ -36,7 +36,9 @@ Insert into  Employee values
      ("yallamraju","lokesh",1,"yelahanka","male",30000,1,1),
      ("uthkarsh","pratap singh",2,"sahakar","male",40000,2,1),
      ("iron","man",3,"bangalore","female",50000,3,2),
-     ("loki","odinson",4,"mg road","female",60000,4,2),("odinson","thor",5,"majestic","male",70000,5,2);*/
+     ("loki","odinson",4,"mg road","female",60000,4,2),("odinson","thor",5,"majestic","male",70000,5,2),
+  ("my","name",12,"yelahanka","male",30000,6,1),
+     ("your","name",13,"sahakar","male",40000,7,2);
      
       create table Dependent(
       Dno int  not null,
@@ -48,7 +50,9 @@ Insert into  Employee values
     
      Insert into Dependent values
      (1,1),
-     (2,4);
+     (2,4),
+     (1,12),
+      (2,13);
 
 
 
