@@ -49,3 +49,13 @@ Insert into  Employee values
      Insert into Dependent values
      (1,1),
      (2,4);
+
+
+
+
+
+/* q1 for each department , retrieve the department name and average salary of all employees working for department*/
+select Dname,avg(salary)  
+from department as d, Employee as e
+where d.Dnumber=e.Dno
+group by Dname
