@@ -64,5 +64,17 @@ from department as d, Employee as e
 where d.Dnumber=e.Dno
 group by Dname
 
+
+
+  /* list the name of managers who have atleast one dependent*/
+    select Fname,Lname from Employee e
+     where exists(Select * from Dependent where e.SSN=ESSN)
+     AND 
+     exists(Select * from Department D where SSN=D.MGRSSN)
+
+
+  select Fname,Lname from Employee as e, Dependent as de,Department as d
+     where (e.SSN=d.MGRSSN)=de.ESSN
+
 /* find substring*/
 select * from Department where Dname like '%s%';
